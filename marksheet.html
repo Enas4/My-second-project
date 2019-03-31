@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+    function marks(){
+	var cat;
+	cat = parseInt(frname.text.value);
+	
+	var bear;
+	bear = parseInt(frname.text.value);
+	
+	var panda;
+	panda = parseInt(frname.text.value);
+	
+	var total = cat+bear+panda;
+	var percent = ((total/300)*100);
+	
+	if(percent >= 90){
+	alert((percent) + " your grade is A+")
+	}
+	else if(percent >= 80){
+	alert((percent) + " your grade is A")
+	}
+	else if(percent >= 70){
+	alert((percent) + " your grade is B")
+	}
+	else{
+	alert((percent) + " you are Fail")
+	}
+	}
+	</script>
+	<head>
+	<body>
+	<form name = "frname">
+	
+	<label>enter physiology marks</label>
+	<input id="text" type="text"/>
+	
+	<label>enter nutrition marks</label>
+	<input id="text2" type="text2"/>
+	
+	<label>enter therapy marks</label>
+	<input id="text3" type="text3"/>
+	
+	<input type= "button" value="total" onclick="marks()"/>
+	
+	</form>
+	</body>
+	</html>
+	
+	
